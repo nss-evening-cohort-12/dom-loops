@@ -2,3 +2,30 @@ body {
   background-color: tomato;
   font-family: monospace;
 }
+
+#dino-pen, #assignments {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.dino {
+  border: 3px dotted blueviolet;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.assignment {
+  border: 5px solid cornflowerblue;
+  border-radius: 20px 0;
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  transition: border-radius 1s, background-color 1s;
+}
+
+.assignment:hover {
+  background-color: darkkhaki;
+  border-radius: 0 20px;
+}
